@@ -161,7 +161,7 @@ def first():
                 unsafe_allow_html=True)
     
     with st.columns(3)[1]:
-        st.image(Image.open("C:/Users/nikunj.bedia/testing_streamlit/acne/acne.jpg").resize((300,200)))
+        st.image(Image.open("acne.jpg").resize((300,200)))
     
     # st.image(Image.open("C:/Users/nikunj.bedia/testing_streamlit/acne/acne.jpg").resize((300,200)))
      
