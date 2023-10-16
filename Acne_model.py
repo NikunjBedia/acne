@@ -1,15 +1,9 @@
 from typing import Dict
 import streamlit as st
-from PIL import Image
-import tensorflow as tf
-import numpy as np
 import os
 from PIL import Image
-from keras.preprocessing import image
 import warnings
 warnings.filterwarnings("ignore")
-from keras.models import load_model
-import cv2
 import pandas as pd
 import urllib.request
 import ssl
@@ -52,16 +46,7 @@ def to_predict(result):
     
     st.write()
     st.write()
-    
-    pred = []
-    cls = []
-    rmrk = []
-    image_name = []
-    prob1 = []
-    prob2 = []
-    prob3 = []
-    prob4 = []
-    
+        
     count=0 #Used in progress bar calculation
     corr=0 #corrupt files count
     progress_text = "Image(s) Processing..."
